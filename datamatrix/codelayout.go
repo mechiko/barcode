@@ -3,8 +3,8 @@ package datamatrix
 import (
 	"strconv"
 
-	"github.com/boombuler/barcode"
-	"github.com/boombuler/barcode/utils"
+	"github.com/mechiko/barcode"
+	"github.com/mechiko/barcode/utils"
 )
 
 type setValFunc func(byte)

@@ -4,7 +4,7 @@ package datamatrix
 import (
 	"errors"
 
-	"github.com/boombuler/barcode"
+	"github.com/mechiko/barcode"
 )
 
 // FNC1 is the codeword for the Function 1 Symbol Character to
@@ -56,7 +56,7 @@ func encodeText(content string) []byte {
 	input := []byte(content)
 
 	isGS1 := len(input) > 0 && input[0] == FNC1
-	
+
 	for i := 0; i < len(input); {
 		c := input[i]
 		i++
